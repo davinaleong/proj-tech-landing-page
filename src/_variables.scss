@@ -1,0 +1,110 @@
+/// V: Variables
+/// V.1. Colors
+$colors: (
+  "primary": #b671db,
+  "secondary": #3f2aad,
+  "accent": #ebb74a,
+);
+@function color($color) {
+  $col: map-get($colors, $color);
+  @return $col;
+}
+
+/// V.2. Fonts
+/// V.2.a Font Families
+$families: (
+  "heading": #{"Roboto",
+  "Arial",
+  sans-serif},
+  "body": #{"Roboto",
+  "Arial",
+  sans-serif},
+  "monospace": #{"Courier New",
+  monospace},
+);
+@function family($family) {
+  $family: map-get($families, $family);
+  @return $family;
+}
+
+/// V.2.b Font Sizes
+$sizes: (
+  "small": 0.8rem,
+  "regular": 1rem,
+  "regular-l": 1.25rem,
+  "large": 1.5rem,
+  "x-large": 2rem,
+  "xx-large": 2.2rem,
+  "heading": 3rem,
+  "heading-l": 3.8rem,
+  "display": 8rem,
+);
+@function size($size) {
+  $font-size: map-get($sizes, $size);
+  @return $font-size;
+}
+
+/// V.2.c Headings
+$headings: (
+  "h1": (
+    "family": family("heading"),
+    "size": size("heading-l"),
+  ),
+  "h2": (
+    "family": family("heading"),
+    "size": size("heading"),
+  ),
+  "h3": (
+    "family": family("heading"),
+    "size": size("xx-large"),
+  ),
+  "h4": (
+    "family": family("heading"),
+    "size": size("x-large"),
+  ),
+  "h5": (
+    "family": family("heading"),
+    "size": size("large"),
+  ),
+  "h6": (
+    "family": family("heading"),
+    "size": size("regular-l"),
+  ),
+);
+@function heading($heading) {
+  $heading: map-get($headings, $heading);
+  @return $heading;
+}
+
+/// V.3. Spacing and Breakpoints
+/// V.3.a Spacers
+$unit: 1rem;
+$spacers: (
+  "1": $unit * 0.25,
+  "2": $unit * 0.5,
+  "3": $unit * 1,
+  "4": $unit * 1.25,
+  "5": $unit * 2,
+  "6": $unit * 3,
+  "7": $unit * 5,
+);
+@function spacer($spacer) {
+  $spacer: map-get($spacers, $spacer);
+  @return $spacer;
+}
+
+/// V.3.b Breakpoints
+$breakpoints: (
+  "phone": 300px,
+  "phone-l": 600px,
+  "tablet": 900px,
+  "desktop": 1200px,
+  "desktop-l": 1600px,
+);
+@function breakpoint($breakpoint) {
+  $breakpoint: map-get($breakpoints, $breakpoint);
+  @return $breakpoint;
+}
+
+/// V.x. Frequently-used Values
+$box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.3);
