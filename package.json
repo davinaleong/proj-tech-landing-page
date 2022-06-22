@@ -1,0 +1,23 @@
+{
+  "name": "proj-tech-landing-page",
+  "version": "1.0.0",
+  "description": "A tech landing page inspired by an image I found on Pinterest\r Note that this a template. The input fields don't work.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davinaleong/proj-tech-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davinaleong/proj-tech-landing-page/issues"
+  },
+  "homepage": "https://github.com/davinaleong/proj-tech-landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
