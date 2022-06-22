@@ -4,6 +4,8 @@ $colors: (
   "primary": #b671db,
   "secondary": #3f2aad,
   "accent": #ebb74a,
+  "white": white,
+  "black": black,
 );
 @function color($color) {
   $col: map-get($colors, $color);
