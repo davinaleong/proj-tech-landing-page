@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "A tech landing page inspired by an image I found on Pinterest\r Note that this a template. The input fields don't work.",
   "main": "index.js",
-  "scripts": {
-    "build": "node-sass src -o css",
-    "watch": "node-sass --watch src -o css"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davinaleong/proj-tech-landing-page.git"
@@ -19,6 +16,7 @@
   },
   "homepage": "https://github.com/davinaleong/proj-tech-landing-page#readme",
   "devDependencies": {
+    "bootstrap": "^5.1.3",
     "node-sass": "^7.0.1"
   }
 }
