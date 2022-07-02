@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Landing Page</title>
 
+    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="scss/main.scss" />
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script defer type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer type="text/javascript" src="../node_modules/slick-carousel/slick/slick.min.js"></script>
     <script
       defer
       src="https://kit.fontawesome.com/6c0a4e7a8f.js"
       crossorigin="anonymous"
     ></script>
+    <script defer type="text/javascript" src="scripts/main.js"></script>
   </head>
   <body>
     <!-- Main Header -->
@@ -71,28 +76,37 @@
     <main id="main-content">
       <!-- Carousel -->
       <section id="carousel">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+        <div id="main-slider">
+          <div>
+            <div class="position-relative">
               <img src="https://via.placeholder.com/1920x1080?text=Slide+1" class="d-block w-100" alt="Slide 1">
-            </div>
-            <div class="carousel-item">
-              <img src="https://via.placeholder.com/1920x1080?text=Slide+2" class="d-block w-100" alt="Slide 2">
-            </div>
-            <div class="carousel-item">
-              <img src="https://via.placeholder.com/1920x1080?text=Slide+3" class="d-block w-100" alt="Slide 3">
+              <div class="slide-content position-absolute top-50 end-0 p-3">
+                <p>Lorem, ipsum dolor.</p>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p><a href="#" class="btn btn-secondary">Shop now</a></p>
+              </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div>
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/1920x1080?text=Slide+2" class="d-block w-100" alt="Slide 2">
+              <div class="slide-content position-absolute top-50 end-0 p-3">
+                <p>Lorem, ipsum dolor.</p>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p><a href="#" class="btn btn-secondary">Shop now</a></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="position-relative">
+              <img src="https://via.placeholder.com/1920x1080?text=Slide+3" class="d-block w-100" alt="Slide 3">
+              <div class="slide-content position-absolute top-50 end-0 p-3">
+                <p>Lorem, ipsum dolor.</p>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p><a href="#" class="btn btn-secondary">Shop now</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- ./Carousel -->
@@ -104,7 +118,7 @@
             <div class="d-flex">
               <i class="fa fa-truck fa-2x me-2"></i>
               <div>
-                <h5>Lorem, ipsum dolor.</h5>
+                <h2 class="h5">Lorem, ipsum dolor.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eius?</p>
               </div>
             </div>
@@ -113,7 +127,7 @@
             <div class="d-flex">
               <i class="fa fa-arrows-rotate fa-2x me-2"></i>
               <div>
-                <h5>Lorem, ipsum dolor.</h5>
+                <h2 class="h5">Lorem, ipsum dolor.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eius?</p>
               </div>
             </div>
@@ -122,7 +136,7 @@
             <div class="d-flex">
               <i class="fa fa-face-grin fa-2x me-2"></i>
               <div>
-                <h5>Lorem, ipsum dolor.</h5>
+                <h2 class="h5">Lorem, ipsum dolor.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eius?</p>
               </div>
             </div>
@@ -131,7 +145,7 @@
             <div class="d-flex">
               <i class="fa fa-cart-shopping fa-2x me-2"></i>
               <div>
-                <h5>Lorem, ipsum dolor.</h5>
+                <h2 class="h5">Lorem, ipsum dolor.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eius?</p>
               </div>
             </div>
@@ -143,7 +157,7 @@
       <!-- Products -->
       <section id="products" class="container py-3">
         <p class="text-center">Lorem, ipsum dolor.</p>
-        <h2 class="text-center mb-4">Lorem ipsum dolor sit amet.</h2>
+        <h2 class="h1 text-center mb-4">Lorem ipsum dolor sit amet.</h2>
 
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 text-center">
@@ -173,7 +187,7 @@
       <!-- Categories -->
       <section id="categories" class="container py-3">
         <p class="text-center">Lorem, ipsum dolor.</p>
-        <h2 class="text-center mb-4">Lorem ipsum dolor sit amet.</h2>
+        <h2 class="h1 text-center mb-4">Lorem ipsum dolor sit amet.</h2>
 
         <div class="grid">
           <div class="cell position-relative">
@@ -211,6 +225,12 @@
         </div><!-- ./grid -->
       </section>
       <!-- ./ Categories -->
+
+      <!-- Product Slider -->
+      <section id="product-slider" class="container py-3">
+
+      </section>
+      <!-- ./Product Slider -->
     </main>
 
     <!-- Main Footer -->
